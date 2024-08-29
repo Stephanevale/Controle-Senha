@@ -1,3 +1,68 @@
+/* Para formatar as margins e paddings do site, o * é um seletor que modifica tudo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* as paletas de cores que utilizaremos no site */
+:root {
+    --background-color-display-numer: rgb(184, 248, 184);
+    --background-color-main: gray;
+    
+}
+
+/* Alteração para formar o menu do nosso projeto */
+main {
+    display: flex;
+    background-color: gray;
+    height: 540px;
+    max-width: 920px;
+    min-width: 500px;
+    margin: 1vh auto;
+}
+
+/* modificação dos botões de resgatar senha */
 #botao-alerta {
-    background-color: red;
+    display: block;
+    width: 80%;
+    border: 0;
+    margin: 5px auto;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* modificação  da senha*/
+#password-number {
+    background-color: rgb(184, 248, 184);
+    width: 60%;
+    font-size: 30px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* modificação do titulo da senha */
+.password-title {
+    font-weight: 700;
+}
+
+/* modificação do menu que pegamos a senha */
+.get-a-password {
+    background-color: rgb(97, 209, 97);
+    width: 30%;
+    max-height: 300px;
+    min-height: 200px;
+    margin: 5vh 0 0 5vw ;
+    text-align: center;
+}
+
+/* aqui onde passará as senhas que serão chamadas */
+.display-password {
+    margin: 30px auto;
+    background-color: white;
+    height: 200px;
+    max-width: 600px;
+    min-width: 300px;
+    text-align: center;
 }
