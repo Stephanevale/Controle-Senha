@@ -66,3 +66,13 @@ main {
     min-width: 300px;
     text-align: center;
 }
+.guiche{
+    background-color: rgb(191, 186, 186);
+    margin: 10px;
+    width: 400px;
+    height: 140px;
+    text-align: center;
+    position: relative;
+    top: 280px;
+    right: 210px;
+}
