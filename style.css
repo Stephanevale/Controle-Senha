@@ -9,6 +9,7 @@
 :root {
     --background-color-display-numer: rgb(184, 248, 184);
     --background-color-main: gray;
+    --background-color-main:  rgb(191, 186, 186);
     
 }
 
@@ -23,13 +24,17 @@ main {
 }
 
 /* modificação dos botões de resgatar senha */
-#botao-alerta {
+#botao-menu{
+    padding: 5px 10px 5px 10px;
+}
+#botao-senha {
     display: block;
-    width: 80%;
-    border: 0;
-    margin: 5px auto;
+    width: 90%;
+    border: 0px;
+    margin: 5px 5px 10px 5px;
     background-color: white;
     border-radius: 4px;
+    padding: 5px 10px 5px 10px;
 }
 
 /* modificação  da senha*/
@@ -50,19 +55,30 @@ main {
 /* modificação do menu que pegamos a senha */
 .get-a-password {
     background-color: rgb(97, 209, 97);
-    width: 30%;
+    width: 50%;
     max-height: 300px;
     min-height: 200px;
-    margin: 5vh 0 0 5vw ;
+    margin: 5vh 0 0 5vw;
+    padding-top: 10px;
     text-align: center;
 }
 
 /* aqui onde passará as senhas que serão chamadas */
 .display-password {
-    margin: 30px auto;
+    margin: 30px;
     background-color: white;
     height: 200px;
     max-width: 600px;
     min-width: 300px;
     text-align: center;
+}
+.guiche{
+    background-color: rgb(191, 186, 186);
+    margin: 10px;
+    width: 400px;
+    height: 140px;
+    text-align: center;
+    position: relative;
+    top: 280px;
+    right: 210px;
 }
