@@ -9,13 +9,13 @@
 :root {
     --background-color-display-numer: rgb(184, 248, 184);
     --background-color-main: gray;
-    --background-color-main:  rgb(191, 186, 186);
-    
+    --background-color-main: rgb(191, 186, 186);
+    --background-color-main: red;
 }
 
 /* Alteração para formar o menu do nosso projeto */
 main {
-    display: flex;
+    position: relative;
     background-color: gray;
     height: 540px;
     max-width: 920px;
@@ -24,7 +24,7 @@ main {
 }
 
 /* modificação dos botões de resgatar senha */
-#botao-menu{
+#botao-menu {
     padding: 5px 10px 5px 10px;
 }
 #botao-senha {
@@ -40,8 +40,8 @@ main {
 /* modificação  da senha*/
 #password-number {
     background-color: rgb(184, 248, 184);
-    width: 60%;
-    font-size: 30px;
+    width: 260px;
+    font-size: 40px;
     padding: 20px;
     margin: auto;
     border-radius: 10px;
@@ -55,30 +55,51 @@ main {
 /* modificação do menu que pegamos a senha */
 .get-a-password {
     background-color: rgb(97, 209, 97);
-    width: 50%;
-    max-height: 300px;
-    min-height: 200px;
-    margin: 5vh 0 0 5vw;
+    width: 200px;
     padding-top: 10px;
     text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 /* aqui onde passará as senhas que serão chamadas */
 .display-password {
-    margin: 30px;
+    display: block;
+    position: absolute;
+    height: 230px;
+    width: 600px;
+    top: 5%;
+    left: 30%;
     background-color: white;
-    height: 200px;
-    max-width: 600px;
-    min-width: 300px;
     text-align: center;
 }
-.guiche{
+.grupo-guiche {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+}
+
+.guiche {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: rgb(191, 186, 186);
-    margin: 10px;
-    width: 400px;
-    height: 140px;
+    width: 200px;
     text-align: center;
-    position: relative;
-    top: 280px;
-    right: 210px;
+    padding: 10px;
+}
+.button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 9px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: unset;
+}
+.button:hover {
+    background-color: rgba(192, 8, 8, 0.712);
 }
