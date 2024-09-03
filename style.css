@@ -29,8 +29,10 @@ main {
 /* modificação dos botões de resgatar senha */
 .botoes-menu {
     padding: 5px 10px 5px 10px;
+    list-style: none;
 }
-.botao-menu{
+
+.botao-senha{
     display: block;
     width: 90%;
     border: 0px;
@@ -40,7 +42,8 @@ main {
     padding: 5px 10px 5px 10px;
     cursor: pointer;
 }
-.botao-menu:hover {
+
+.botao-senha:hover {
     background-color:rgb(191, 186, 186);
 }
 
