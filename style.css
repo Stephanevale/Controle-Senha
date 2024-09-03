@@ -38,6 +38,10 @@ main {
     background-color: white;
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+#botao-senha:hover {
+    background-color:rgb(191, 186, 186);
 }
 
 /* modificação  da senha*/
