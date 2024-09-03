@@ -27,10 +27,10 @@ main {
 }
 
 /* modificação dos botões de resgatar senha */
-#botao-menu {
+.botoes-menu {
     padding: 5px 10px 5px 10px;
 }
-#botao-senha {
+.botao-menu{
     display: block;
     width: 90%;
     border: 0px;
@@ -40,12 +40,12 @@ main {
     padding: 5px 10px 5px 10px;
     cursor: pointer;
 }
-#botao-senha:hover {
+.botao-menu:hover {
     background-color:rgb(191, 186, 186);
 }
 
 /* modificação  da senha*/
-#password-number {
+.numero-senha {
     background-color: rgb(184, 248, 184);
     width: 260px;
     font-size: 40px;
@@ -55,12 +55,12 @@ main {
 }
 
 /* modificação do titulo da senha */
-.password-title {
+.titulo-senha{
     font-weight: 700;
 }
 
 /* modificação do menu que pegamos a senha */
-.get-a-password {
+.retirada-senha {
     background-color: rgb(97, 209, 97);
     width: 200px;
     padding-top: 10px;
@@ -71,7 +71,7 @@ main {
 }
 
 /* aqui onde passará as senhas que serão chamadas */
-.display-password {
+.exibicao-senha{
     display: block;
     position: absolute;
     height: 230px;
@@ -81,7 +81,7 @@ main {
     background-color: white;
     text-align: center;
 }
-.grupo-guiche {
+.grupo-guiches{
     display: flex;
     flex-direction: row;
     gap: 90px;
@@ -99,7 +99,7 @@ main {
     text-align: center;
     padding: 10px;
 }
-.button {
+.botao {
     background-color: red;
     color: #fff;
     padding: 10px 9px;
@@ -107,11 +107,11 @@ main {
     border-radius: 8px;
     border: unset;
 }
-.button:hover {
+.botao:hover {
     background-color: rgba(192, 8, 8, 0.712);
 }
 
-.fila {
+.fila-senhas{
     background-color: rgb(97, 209, 97);
     width: 150px;
     padding: 10px;
