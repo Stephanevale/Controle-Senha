@@ -11,6 +11,9 @@
     --background-color-main: gray;
     --background-color-main: rgb(191, 186, 186);
     --background-color-main: red;
+    --background-color-main: rgb(192, 8, 8, 0.712);
+    --background-color-main: white;
+    --background-color-main: rgb(97, 209, 97);
 }
 
 /* Alteração para formar o menu do nosso projeto */
@@ -35,6 +38,10 @@ main {
     background-color: white;
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+#botao-senha:hover {
+    background-color:rgb(191, 186, 186);
 }
 
 /* modificação  da senha*/
@@ -102,4 +109,31 @@ main {
 }
 .button:hover {
     background-color: rgba(192, 8, 8, 0.712);
+}
+
+.fila {
+    background-color: rgb(97, 209, 97);
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 54%;
+    left: 8%;
+}
+
+.senhas-geradas {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.item-fila {
+    background-color: #fff;
+    padding: 5px 9px;
+    border-radius: 8px;
+    border: unset;
 }
