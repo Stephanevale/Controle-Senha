@@ -41,6 +41,7 @@ main {
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .botao-senha:hover {
@@ -140,4 +141,5 @@ main {
     padding: 5px 9px;
     border-radius: 8px;
     border: unset;
+    font-size: 12px;
 }
