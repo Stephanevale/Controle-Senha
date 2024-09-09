@@ -41,6 +41,7 @@ main {
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .botao-senha:hover {
@@ -132,11 +133,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    
+    height: 150px;
+    overflow-y: auto;
 }
 .item-fila {
     background-color: #fff;
     padding: 5px 9px;
     border-radius: 8px;
     border: unset;
+    font-size: 12px;
 }
