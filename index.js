@@ -1,12 +1,14 @@
 const fila = [];
+
+const categorias = [
+    { nome: "Agendamentos", id: 1, codigo: "AG" },
+    { nome: "Clínica", id: 2, codigo: "CL" },
+    { nome: "Aplicação de medicamentos", id: 3, codigo: "AM" },
+    { nome: "Exames", id: 4, codigo: "EX" },
+    { nome: "Comercial", id: 5, codigo: "CO" },
+];
+
 $(document).ready(() => {
-    const categorias = [
-        { nome: "Agendamentos", id: 1, codigo: "AG" },
-        { nome: "Clínica", id: 2, codigo: "CL" },
-        { nome: "Aplicação de medicamentos", id: 3, codigo: "AM" },
-        { nome: "Exames", id: 4, codigo: "EX" },
-        { nome: "Comercial", id: 5, codigo: "CO" },
-    ];
     const listagemCategorias = $("#listagem-categorias");
     categorias.forEach(function (categoria) {
         const itemCategoria = $(
