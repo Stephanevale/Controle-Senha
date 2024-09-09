@@ -132,7 +132,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    
+    height: 150px;
+    overflow-y: auto;
 }
 .item-fila {
     background-color: #fff;
