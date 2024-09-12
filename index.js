@@ -8,6 +8,11 @@ const categorias = [
     { nome: "Comercial", id: 5, codigo: "CO" },
 ];
 
+const guiches = [
+    { id: 1, categoriasId: [1, 2, 3] },
+    { id: 2, categoriasId: [4, 5] },    
+]
+
 $(document).ready(() => {
     const listagemCategorias = $("#listagem-categorias");
     categorias.forEach(function (categoria) {
