@@ -1,18 +1,17 @@
 let fila = [];
+let countGerarSenha = 0;
+let senhaAnterior = 0
 
 const categorias = [
-    { nome: "Agendamentos", id: 1, codigo: "AG" },
-    { nome: "Clínica", id: 2, codigo: "CL" },
-    { nome: "Aplicação de medicamentos", id: 3, codigo: "AM" },
-    { nome: "Exames", id: 4, codigo: "EX" },
-    { nome: "Comercial", id: 5, codigo: "CO" },
+    { id: 1, nome: "Agendamentos", codigo: "AG" },
+    { id: 2, nome: "Clínica", codigo: "CL" },
+    { id: 3, nome: "Aplicação de medicamentos", codigo: "AM" },
+    { id: 4, nome: "Exames", codigo: "EX" },
+    { id: 5, nome: "Comercial", codigo: "CO" },
 ];
 
 const guiches = [
-    {
-        id: 1,
-        categoriasId: [categorias[0].id, categorias[1].id, categorias[2].id],
-    },
+    {id: 1,categoriasId: [categorias[0].id, categorias[1].id, categorias[2].id],},
     { id: 2, categoriasId: [categorias[3].id, categorias[4].id]},
 ];
 
@@ -50,16 +49,16 @@ $(document).ready(() => {
         const categoria = categorias.find(function (cat) {
             return cat.id === categoriaId;
         });
-        const numero = 1 + Math.floor(Math.random() * (100 - 1) + 1);
-        const senhaAleatoria = `${categoria.codigo}${numero}`;
+        countGerarSenha += 1
+        const senhaChamada= `${categoria.codigo}${countGerarSenha}`;
 
-        fila.push({ categoriaId, senha: senhaAleatoria });
+        fila.push({ categoriaId, senha: senhaChamada });
 
         const listagemSenhas = $("#listagemSenhasGeradas");
-        const senhaGerada = $(`<li class="item-fila">${senhaAleatoria}</li>`);
+        const senhaGerada = $(`<li class="item-fila">${senhaChamada}</li>`);
         listagemSenhas.append(senhaGerada);
     }
-
+    
     function enviaSenhaChamadaParaGuiche(senhaChamada, guicheId) {
         fila = fila.filter(function(item) {
             return item.senha !== senhaChamada.senha
@@ -72,5 +71,11 @@ $(document).ready(() => {
         })
         const exibicaoguiche = $(`#senhaguiche${guicheId}`);
         exibicaoguiche.html(senhaChamada.senha);
+        
+
+        
+        document.getElementById("numeroSenha2").innerText = document.getElementById("numeroSenha").textContent
+        let senha = document.getElementById(`senhaguiche${guicheId}`).textContent
+        document.getElementById("numeroSenha").innerText = senha
     }
 });

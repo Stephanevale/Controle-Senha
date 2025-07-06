@@ -11,19 +11,22 @@
     --background-color-main: gray;
     --background-color-main: rgb(191, 186, 186);
     --background-color-main: red;
-    --background-color-main: rgb(192, 8, 8, 0.712);
+    --background-color-main-red: rgb(177, 0, 0);
+    --background-color-main-red-dark: rgb(66, 0, 0);
     --background-color-main: white;
     --background-color-main: rgb(97, 209, 97);
 }
 
 /* Alteração para formar o menu do nosso projeto */
 main {
+    border-radius: 10px;
     position: relative;
     background-color: gray;
     height: 540px;
     max-width: 920px;
     min-width: 500px;
     margin: 1vh auto;
+    border: 10px solid rgb(46, 46, 46) ;
 }
 
 /* modificação dos botões de resgatar senha */
@@ -50,12 +53,22 @@ main {
 
 /* modificação  da senha*/
 .numero-senha {
-    background-color: rgb(184, 248, 184);
+    background-color: #b8f8b8;
     width: 260px;
     font-size: 40px;
     padding: 20px;
     margin: auto;
     border-radius: 10px;
+    border: 2px solid #7db67d;
+}
+
+.mostrar-senha {
+    width: 100%;
+}
+.mostrar-senha:nth-child(2) .numero-senha {
+    background-color: var(--background-color-main-red);
+    color: var(--background-color-main-red-dark);
+    border: 2px solid rgb(129, 1, 1);
 }
 
 /* modificação do titulo da senha */
@@ -76,15 +89,20 @@ main {
 
 /* aqui onde passará as senhas que serão chamadas */
 .exibicao-senha{
-    display: block;
+    display: flex;
     position: absolute;
+    justify-content: cener;
     height: 230px;
     width: 600px;
     top: 5%;
     left: 30%;
     background-color: white;
     text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    border: 5px solid rgb(68, 68, 68);
 }
+
 .grupo-guiches{
     display: flex;
     flex-direction: row;
@@ -102,6 +120,8 @@ main {
     width: 200px;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 .botao {
     background-color: red;
@@ -116,18 +136,26 @@ main {
 }
 
 .fila-senhas{
+    text-align: center;
     background-color: rgb(97, 209, 97);
     width: 150px;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     display: flex;
     flex-direction: column;
     gap: 10px;
     top: 54%;
     left: 8%;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 105, 0);
+}
+
+h4 {
+    text-decoration: underline;
 }
 
 .senhas-geradas {
+    background-color: rgb(33, 177, 33);
     list-style: none;
     text-align: center;
     display: flex;
@@ -135,6 +163,7 @@ main {
     gap: 5px;
     height: 150px;
     overflow-y: auto;
+    border-radius: 10px;
 }
 .item-fila {
     background-color: #fff;
@@ -142,4 +171,9 @@ main {
     border-radius: 8px;
     border: unset;
     font-size: 12px;
+    border: 1px solid;
+    width: 90%;
+    margin: 0 auto;
 }
+
+
